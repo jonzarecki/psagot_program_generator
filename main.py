@@ -63,7 +63,8 @@ def generate_program_name() -> str:
 
 def main() -> None:
     """Psagot Program Generator."""
-    image = Image.open(os.path.join(os.path.dirname(__file__), "Psagot.jpg"))
+    image = Image.open(os.path.join(os.path.dirname(__file__), "Psagot.png"))
+    st.set_page_config(page_title="Psagot Generator", page_icon=image)
     c1, c2 = st.columns([1, 6])
     c1.image(image, width=100)
     c2.title("Psagot Program Generator")
