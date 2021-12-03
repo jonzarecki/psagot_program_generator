@@ -9,7 +9,7 @@ import toml
 from nox import Session
 
 package = "psagot_program_generator"
-python_versions = ["3.7"]
+python_versions = ["3.8"]
 nox.needs_version = ">= 2021.6.6"
 nox.options.sessions = ("tests", "xdoctest", "docs-build")  # , "pre-commit"
 pyproject_data = toml.loads(Path("pyproject.toml").read_text())

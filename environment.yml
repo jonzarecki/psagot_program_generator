@@ -37,5 +37,7 @@ dependencies:
 #      - wandb
 #      - panel
     - streamlit
+    - nox
+    - toml
 #      - pathos
 #      - sqlfluff # for sql linting
