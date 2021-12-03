@@ -15,7 +15,12 @@ class NameOpt:
     is_female: bool
 
 
-name1_options = [NameOpt("תוכנה", True), NameOpt("חשמל", False), NameOpt("ביולוגיה", True)]
+name1_options = [
+    NameOpt("תוכנה", True),
+    NameOpt("חשמל", False),
+    NameOpt("ביולוגיה", True),
+    NameOpt("היסטוריה", True),
+]
 
 name2_options = [
     NameOpt("ימית", True),
@@ -32,7 +37,18 @@ name2_options = [
     NameOpt("קוונטי", False),
 ]
 
-university_options = ["בטכניון", "בבן גוריון", "בתל אביב", "בעברית", "בייל", "באוניברסיטת מוסקבה", "בפריפריה"]
+university_options = [
+    "בטכניון",
+    "בבן גוריון",
+    "בתל אביב",
+    "בעברית",
+    "בייל",
+    "באוניברסיטת מוסקבה",
+    "בפריפריה",
+    "בחלל",
+    "בתקופת המנדט",
+    "במימד הקיברנטי",
+]
 
 
 def generate_program_name() -> str:
@@ -57,7 +73,8 @@ def generate_program_name() -> str:
     if random.random() < 0.1:
         prog_name += " בתנאי פנימיה"
 
-    prog_name += f" {random.choice(university_options)}"
+    if random.random() < 0.4:
+        prog_name += f" {random.choice(university_options)}"
     return prog_name
 
 
