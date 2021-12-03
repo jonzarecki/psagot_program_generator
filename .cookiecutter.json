@@ -1,0 +1,16 @@
+{
+  "_copy_without_render": [
+    "*.html",
+    "**docs/source/_templates/**"
+  ],
+  "_template": "https://github.com/jonzarecki/cookiecutter-test",
+  "author": "Jonathan Zarecki",
+  "development_status": "Development Status :: 4 - Beta",
+  "email": "mail@jonzarecki.com",
+  "friendly_name": "Psagot Program Generator",
+  "github_user": "jonzarecki",
+  "license": "MIT",
+  "package_name": "psagot_program_generator",
+  "project_name": "psagot_program_generator",
+  "version": "0.0.0"
+}
