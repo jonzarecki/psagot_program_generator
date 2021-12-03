@@ -49,7 +49,7 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
-          file: .common/conf_files/Dockerfile
+          file: .Dockerfile
           tags: psagot_program_generator:ci
           load: true
           cache-from: type=gha
