@@ -10,7 +10,7 @@ from nox import Session
 package = "psagot_program_generator"
 python_versions = ["3.8"]
 nox.needs_version = ">= 2021.6.6"
-nox.options.sessions = ("tests", "xdoctest", "docs-build")  # , "pre-commit"
+nox.options.sessions = ("tests",)  # , "pre-commit"
 pyproject_data = toml.loads(Path("pyproject.toml").read_text())
 submodule_paths = []
 if os.path.exists(".gitmodules"):
