@@ -79,7 +79,7 @@ def main() -> None:
 
     data = generate_program_name()
     t.markdown(f"<h1 style='text-align: center; color: red;'>{data}</h1>", unsafe_allow_html=True)
-    if random.random() < 0.5:
+    if random.random() < 0.05:
         small.markdown(
             "<div style='text-align: right; color: gray; direction: rtl'>פסגות ט\"ו הכי prestigious</div>",
             unsafe_allow_html=True,
