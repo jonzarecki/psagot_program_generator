@@ -67,11 +67,11 @@ def main() -> None:
     st.set_page_config(page_title="Psagot Generator", page_icon=image)
     c1, c2 = st.columns([1, 6])
     c1.image(image, width=100)
-    c2.title("Psagot Program Generator")
+    c2.title("מחולל מגמות בפסגות")
 
     _, top2, _ = st.columns(3)
 
-    top2.button("Generate!")
+    top2.button("חולל!")
 
     t = st.empty()
 
