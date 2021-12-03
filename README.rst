@@ -52,7 +52,8 @@ please `file an issue`_ along with a detailed description.
 Configurations
 --------------
 
-Dockerfile, conda environment and other configurations are in `common/conf_files`.
+
+Most configurations are in the root folder, others are in `common/conf_files`.
 
 Credits
 -------
