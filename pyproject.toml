@@ -1,5 +1,5 @@
 [tool.coverage.run]
-source = ["psagot_program_generator", "common"]
+source = ["common"]
 omit = [
   "setup.py",
   "*config*.py",
@@ -72,6 +72,6 @@ no_implicit_reexport = true
 exclude = ["notebooks/", "**/tests/"]
 make_whitelist = true
 min_confidence = 100
-paths = ["psagot_program_generator", "common"]
+paths = ["common"]
 sort_by_size = true
 verbose = false  # verbose doesn't work on utf-8

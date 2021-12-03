@@ -6,7 +6,7 @@ from dataclasses import dataclass
 import streamlit as st
 from PIL import Image
 
-sys.path.append("../")
+sys.path.append("/")
 
 
 @dataclass
@@ -28,8 +28,8 @@ name2_options = [
     NameOpt("כימי", False),
     NameOpt("חישובית", True),
     NameOpt("חישובי", False),
-    NameOpt("חישובית", True),
-    NameOpt("חישובי", False),
+    NameOpt("קוונטית", True),
+    NameOpt("קוונטי", False),
 ]
 
 university_options = ["בטכניון", "בבן גוריון", "בתל אביב", "בעברית", "בייל", "באוניברסיטת מוסקבה", "בפריפריה"]
@@ -67,6 +67,11 @@ def main() -> None:
     c1, c2 = st.columns([1, 6])
     c1.image(image, width=100)
     c2.title("Psagot Program Generator")
+
+    _, top2, _ = st.columns(3)
+
+    top2.button("Generate!")
+
     t = st.empty()
 
     small = st.empty()
@@ -80,10 +85,6 @@ def main() -> None:
         )
     else:
         small.text(" ")
-
-    _, bot2, _ = st.columns(3)
-
-    bot2.button("Generate!")
 
 
 if __name__ == "__main__":
