@@ -20,6 +20,7 @@ name1_options = [
     NameOpt("חשמל", False),
     NameOpt("ביולוגיה", True),
     NameOpt("היסטוריה", True),
+    NameOpt("קוגניציה", True),
 ]
 
 name2_options = [
@@ -35,6 +36,8 @@ name2_options = [
     NameOpt("חישובי", False),
     NameOpt("קוונטית", True),
     NameOpt("קוונטי", False),
+    NameOpt("אקספלנבילי", False),
+    NameOpt("אקספלנבילית", True),
 ]
 
 university_options = [
@@ -54,7 +57,7 @@ university_options = [
 def generate_program_name() -> str:
     """Generate a new psagot program at will."""
     name1 = random.choice(name1_options)
-    if random.random() < 0.85:
+    if random.random() < 0.9:
         name2 = random.choice([n2 for n2 in name2_options if n2.is_female == name1.is_female])
     else:
         name2 = NameOpt("", False)
